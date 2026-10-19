@@ -143,4 +143,4 @@ Esta infraestructura quedó preparada para una segunda fase del proyecto centrad
 
 La documentación completa del despliegue incluye la configuración y las pruebas realizadas durante el proyecto.
 
-**Memoria completa del proyecto:** próximamente disponible en este repositorio.
+**Memoria completa del proyecto:** En el directorio Docs de este repositorio.
