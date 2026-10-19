@@ -1,5 +1,4 @@
-# honeypot-aws-cowrie-wazuh
-Despliegue de un honeypot en AWS con Cowrie y Nginx, conectado mediante WireGuard a un servidor Wazuh local para la centralización de eventos.
+
 # Honeypot en AWS con Cowrie y Wazuh
 
 Proyecto de ciberseguridad centrado en el despliegue de un honeypot
@@ -14,7 +13,7 @@ La comunicación entre AWS y el entorno local se realiza mediante
 **WireGuard**, evitando exponer directamente el servidor Wazuh a
 Internet.
 
-##Objetivos
+## Objetivos
 
 - Diseñar la infraestructura del laboratorio en AWS.
 - Desplegar servicios señuelo accesibles desde Internet.
