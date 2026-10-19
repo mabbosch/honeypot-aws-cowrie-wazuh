@@ -85,3 +85,6 @@ Mediante una regla de `iptables`, el tráfico recibido en el puerto 22 se rediri
 ```bash
 sudo iptables -t nat -A PREROUTING -p tcp --dport 22 -j REDIRECT --to-ports 2222
 
+```bash
+
+El servicio SSH real utilizado para administrar el servidor se trasladó al puerto 22222, manteniéndolo separado del honeypot.
