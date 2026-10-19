@@ -24,26 +24,25 @@ Internet.
 
 ## Arquitectura
 
-[AQUÍ PONDREMOS EL DIAGRAMA]
+![Arquitectura del laboratorio](images/arquitectura.png)
 
-La infraestructura está dividida entre AWS y el entorno local.
 
-En AWS se encuentra el honeypot, formado por un servidor Ubuntu con
-Cowrie y Nginx. El agente Wazuh instalado en el honeypot envía los
-eventos al Wazuh Manager situado en una máquina virtual local.
+El laboratorio se divide en dos entornos principales:
 
-La comunicación entre ambos entornos se realiza mediante una VPN
-WireGuard.
+**AWS**
+- Instancia Ubuntu Server.
+- Cowrie como servicio SSH señuelo.
+- Nginx como servidor web.
+- Agente Wazuh.
+
+**Entorno local**
+- Wazuh Manager.
+- Wazuh Indexer.
+- Wazuh Dashboard.
+
+Ambos entornos se comunican mediante una VPN **WireGuard**, permitiendo enviar los eventos del honeypot hacia Wazuh sin exponer el servidor de monitorización directamente a Internet.
 
 ## Tecnologías utilizadas
 
-- AWS
-- Ubuntu Server
-- Cowrie
-- Nginx
-- Wazuh
-- WireGuard
-- DNS
-- HTTPS / TLS
-- iptables
-- systemd
+`AWS` `Ubuntu Server` `Cowrie` `Nginx` `Wazuh` `WireGuard` `DNS` `HTTPS/TLS` `iptables` `systemd`
+
